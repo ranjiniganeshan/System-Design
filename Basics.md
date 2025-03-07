@@ -13,3 +13,5 @@ which is the numeric address computers use to communicate with each other.
 
 * Step 4: DNS Resolver → Authoritative Nameserver
 (Authoritative nameserver returns the final IP address.)
+
+![DNS drawio](https://github.com/user-attachments/assets/cc20687a-11c3-47ce-b038-2652866a0c04)
