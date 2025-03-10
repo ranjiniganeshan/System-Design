@@ -31,3 +31,10 @@ Step 3 - After validating the SSL certificate, the client generates a session ke
 
 Step 4 - Now that both the client and the server hold the same session key (symmetric encryption), the encrypted data is transmitted in a secure bi-directional channel.
 
+
+
+## learn A record
+
+
+
+
