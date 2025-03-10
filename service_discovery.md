@@ -13,6 +13,7 @@ sudo systemctl enable --now nginx
 echo "Hello from Service 2" | sudo tee /usr/share/nginx/html/index.html
 ```
 Step 2: Verify if the webpage works.
+![Screenshot 2025-03-10 at 10 04 03 PM](https://github.com/user-attachments/assets/c958f079-9526-4fed-94a0-c0b9f00004db)
 
-![Screenshot 2025-03-10 at 10 16 36 PM](https://github.com/user-attachments/assets/407bf033-15f0-4b47-ab93-994626009c43)
-![Screenshot 2025-03-10 at 10 04 03 PM](https://github.com/user-attachments/assets/ae357cfd-1b69-4191-b2bd-418804c669ec)
+![Screenshot 2025-03-10 at 10 16 11 PM](https://github.com/user-attachments/assets/41c65418-4c60-4178-be0a-8d18b0e11624)
+
