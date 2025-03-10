@@ -8,7 +8,6 @@ echo "Hello from Service 1" | sudo tee /usr/share/nginx/html/index.html
 for server 2
 
 ```
-```
 sudo yum install nginx -y  # Amazon Linux
 sudo systemctl enable --now nginx
 echo "Hello from Service 2" | sudo tee /usr/share/nginx/html/index.html
