@@ -12,7 +12,7 @@ The project is build and hosted. But it uses netlify domain
 * Step 4: Choose domain management and change the cname 
 
 <img width="1132" alt="Screenshot 2025-03-10 at 7 16 18 PM" src="https://github.com/user-attachments/assets/0131628a-1359-483f-86d7-e352945d9fb0" />
-Step 5: Access www.systemdesigns.org
+Step 5: Access www.systemdesigns.xyz
 
 <img width="1511" alt="Screenshot 2025-03-10 at 7 17 18 PM" src="https://github.com/user-attachments/assets/e0ca2dc3-c2bc-4055-81c1-c29bd3f1e38e" />
 
