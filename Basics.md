@@ -44,30 +44,41 @@ Step 4 - Now that both the client and the server hold the same session key (symm
 # How It Works:
 * The suffix (like “/24”) determines how many addresses are available in the network. For example, a /24 network provides 256 IP addresses (with typically 254 usable for hosts)
 * Ipaddress are 32 bits. 
-10.0.0.8 ->
-1286432168421 -> Each octet is represented in powers of 2
-00001010.00000000.00000000.00001000
+* 10.0.0.8 ->
+* 1286432168421 -> Each octet is represented in powers of 2
+* 00001010.00000000.00000000.00001000
 
 
-Private IP Ranges Defined by RFC 1918
-10.0.0.0/8
-
-Range: 10.0.0.0 to 10.255.255.255
-Number of Addresses: Over 16 million addresses (16,777,216 total)
-Usage:
+##Private IP Ranges Defined by RFC 1918
+* 10.0.0.0/8
+1. Range: 10.0.0.0 to 10.255.255.255
 This range is very large and is well-suited for large organizations or service providers that need to segment their network extensively. It offers a high degree of flexibility in terms of subnetting, allowing you to design a complex hierarchical network.
-172.16.0.0/12
 
+* 172.16.0.0/12
 Range: 172.16.0.0 to 172.31.255.255
-Number of Addresses: Approximately 1 million addresses (1,048,576 total)
 Usage:
-This block is typically used by medium-sized organizations. It provides a balance between the vast address space of the 10.0.0.0/8 block and the smaller 192.168.0.0/16 block. It’s a good option if you need more addresses than a home or small office network but don’t require the full 10/8 space.
-192.168.0.0/16
-
+1. This block is typically used by medium-sized organizations. It provides a balance between the vast address space of the 10.0.0.0/8 block and the smaller 192.168.0.0/16 block. It’s a good option if you need more addresses than a home or small office network but don’t require the full 10/8 space.
+   
+* 192.168.0.0/16
 Range: 192.168.0.0 to 192.168.255.255
 Number of Addresses: 65,536 addresses
 Usage:
 This range is most commonly used in small networks, such as home networks and small offices. Many consumer-grade routers are preconfigured to use subnets within this range (e.g., 192.168.1.0/24). Its smaller size makes it easier to manage for less complex networks.
+
+In a CIDR notation like 10.0.0.0/8, the "/8" tells you how many bits in the 32-bit IP address are dedicated to the network portion. Here's a breakdown:
+
+Network and Host Portions
+Network Portion (/8):
+The /8 means that the first 8 bits of the IP address are fixed to represent the network.
+For 10.0.0.0/8, this means that the first octet is 10 (which in binary is 00001010), and it remains the same for every address in this network.
+Host Portion:
+The remaining 32 - 8 = 24 bits are used for host addresses within the network.
+This gives you a total of 2^24 = 16,777,216 possible IP addresses (from 10.0.0.0 to 10.255.255.255).
+What Changes and What Remains Fixed
+Fixed Part (Network):
+10.0.0.0/8 fixes only the first octet. Every IP in this block starts with 10.
+Variable Part (Host):
+The remaining three octets can vary from 0.0.0 up to 255.255.255, allowing for a vast number of unique addresses within this network.
 
 
 
