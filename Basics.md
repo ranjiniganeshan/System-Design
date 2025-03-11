@@ -49,7 +49,7 @@ Step 4 - Now that both the client and the server hold the same session key (symm
 * 00001010.00000000.00000000.00001000
 
 
-##Private IP Ranges Defined by RFC 1918
+## Private IP Ranges Defined by RFC 1918
 * 10.0.0.0/8
 1. Range: 10.0.0.0 to 10.255.255.255
 This range is very large and is well-suited for large organizations or service providers that need to segment their network extensively. It offers a high degree of flexibility in terms of subnetting, allowing you to design a complex hierarchical network.
@@ -62,13 +62,13 @@ Usage:
 * 192.168.0.0/16
 Range: 192.168.0.0 to 192.168.255.255
 Number of Addresses: 65,536 addresses
-Usage:
+1. Usage:
 This range is most commonly used in small networks, such as home networks and small offices. Many consumer-grade routers are preconfigured to use subnets within this range (e.g., 192.168.1.0/24). Its smaller size makes it easier to manage for less complex networks.
 
-In a CIDR notation like 10.0.0.0/8, the "/8" tells you how many bits in the 32-bit IP address are dedicated to the network portion. Here's a breakdown:
+* In a CIDR notation like 10.0.0.0/8, the "/8" tells you how many bits in the 32-bit IP address are dedicated to the network portion. Here's a breakdown:
 
-Network and Host Portions
-Network Portion (/8):
+# Network and Host Portions
+* Network Portion (/8):
 The /8 means that the first 8 bits of the IP address are fixed to represent the network.
 For 10.0.0.0/8, this means that the first octet is 10 (which in binary is 00001010), and it remains the same for every address in this network.
 Host Portion:
