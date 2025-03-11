@@ -69,15 +69,15 @@ This range is most commonly used in small networks, such as home networks and sm
 
 # Network and Host Portions
 * Network Portion (/8):
-The /8 means that the first 8 bits of the IP address are fixed to represent the network.
+* The /8 means that the first 8 bits of the IP address are fixed to represent the network.
 For 10.0.0.0/8, this means that the first octet is 10 (which in binary is 00001010), and it remains the same for every address in this network.
-Host Portion:
+* Host Portion:
 The remaining 32 - 8 = 24 bits are used for host addresses within the network.
 This gives you a total of 2^24 = 16,777,216 possible IP addresses (from 10.0.0.0 to 10.255.255.255).
-What Changes and What Remains Fixed
-Fixed Part (Network):
+* What Changes and What Remains Fixed
+* Fixed Part (Network):
 10.0.0.0/8 fixes only the first octet. Every IP in this block starts with 10.
-Variable Part (Host):
+* Variable Part (Host):
 The remaining three octets can vary from 0.0.0 up to 255.255.255, allowing for a vast number of unique addresses within this network.
 
 
