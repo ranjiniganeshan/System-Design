@@ -37,4 +37,39 @@ Step 4 - Now that both the client and the server hold the same session key (symm
 
 
 
+## How to Design the CIDR range for VPC.
+* Classless Inter-Domain Routing : CIDR is a system that allows for a flexible allocation of IP addresses
+* CIDR notation (e.g., 192.168.1.0/24) combines an IP address with a prefix length that indicates the number of bits used for the network portion.
+
+# How It Works:
+* The suffix (like “/24”) determines how many addresses are available in the network. For example, a /24 network provides 256 IP addresses (with typically 254 usable for hosts)
+* Ipaddress are 32 bits. 
+10.0.0.8 ->
+1286432168421 -> Each octet is represented in powers of 2
+00001010.00000000.00000000.00001000
+
+
+Private IP Ranges Defined by RFC 1918
+10.0.0.0/8
+
+Range: 10.0.0.0 to 10.255.255.255
+Number of Addresses: Over 16 million addresses (16,777,216 total)
+Usage:
+This range is very large and is well-suited for large organizations or service providers that need to segment their network extensively. It offers a high degree of flexibility in terms of subnetting, allowing you to design a complex hierarchical network.
+172.16.0.0/12
+
+Range: 172.16.0.0 to 172.31.255.255
+Number of Addresses: Approximately 1 million addresses (1,048,576 total)
+Usage:
+This block is typically used by medium-sized organizations. It provides a balance between the vast address space of the 10.0.0.0/8 block and the smaller 192.168.0.0/16 block. It’s a good option if you need more addresses than a home or small office network but don’t require the full 10/8 space.
+192.168.0.0/16
+
+Range: 192.168.0.0 to 192.168.255.255
+Number of Addresses: 65,536 addresses
+Usage:
+This range is most commonly used in small networks, such as home networks and small offices. Many consumer-grade routers are preconfigured to use subnets within this range (e.g., 192.168.1.0/24). Its smaller size makes it easier to manage for less complex networks.
+
+
+
+
 
