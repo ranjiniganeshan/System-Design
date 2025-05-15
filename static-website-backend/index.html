@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Subscribe Page</title>
+</head>
+<body>
+  <h2>Subscribe to our newsletter</h2>
+  <button id="subscribeBtn">Subscribe</button>
+  <p id="message"></p>
+
+  <script>
+    document.getElementById("subscribeBtn").addEventListener("click", () => {
+      fetch("http://localhost:3000/subscribe")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("message").innerText = data;
+        })
+        .catch(err => {
+          console.error(err);
+          document.getElementById("message").innerText = "Something went wrong.";
+        });
+    });
+  </script>
+</body>
+</html>
